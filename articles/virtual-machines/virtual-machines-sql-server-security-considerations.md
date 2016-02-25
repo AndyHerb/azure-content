@@ -38,13 +38,8 @@ Following is a list of security recommendations that should be considered when c
 - By default, Azure selects Windows Authentication during SQL Server Virtual Machine setup. Therefore, the **SA** login is disabled and a password is assigned by setup. We recommend that the **SA** login should be not be used or enabled. The following are alternative strategies if a SQL Login is desired:
 	- Create a SQL account that has **CONTROL SERVER** permissions.
 	- If you must use a **SA** login, enable the login and rename it and assign a new password.
-	- Both the options that were mentioned earlier require a change the authentication mode to SQL Server and Windows Authentication Mode. For more information, see Change Server Authentication Mode.
+	- Both the options that were mentioned earlier require a change the authentication mode to **SQL Server and Windows Authentication Mode**. For more information, see [Change Server Authentication Mode](https://msdn.microsoft.com/library/ms188670.aspx).
 
-- Create a SQL account that has CONTROL SERVER permissions.
-
-- If you must use a SA login, enable the login and rename it and assign a new password.
-
-- Both the options that were mentioned earlier require a change the authentication mode to **SQL Server and Windows Authentication Mode**. For more information, see [Change Server Authentication Mode](https://msdn.microsoft.com/library/ms188670.aspx).
 
 ## Considerations for Securing Connections to Azure Virtual Machine:
 
